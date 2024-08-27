@@ -21,7 +21,7 @@ sudo apt install g++ libboost-all-dev
 ```
 
 ```
-git clone https://github.com/607011/txtz.git
+git clone https://github.com/cttester/txtz.git
 cd txtz
 git submodule update --init
 git submodule update --remote --merge
@@ -34,7 +34,7 @@ cmake --build .
 ### macOS
 
 ```
-git clone https://github.com/607011/txtz.git
+git clone https://github.com/cttester/txtz.git
 cd txtz
 git submodule update --init
 git submodule update --remote --merge
@@ -50,7 +50,7 @@ cmake --build .
 In Visual Studio Developer Console:
 
 ```
-git clone https://github.com/607011/txtz.git
+git clone https://github.com/cttester/txtz.git
 cd txtz
 git submodule update --init
 git submodule update --remote --merge
@@ -63,10 +63,10 @@ cmake --build . --config Release
 
 ## Remarks
 
-By default, Huffman encoding is used to build the binary tree. You can change that to Shannon-Fano encoding by setting `MAPBUILDING_ALGO` to `shannon-fano` instead `huffman` when calling `cmake` to configure the project:
+By default, Shannon-Fano encoding is used to build the binary tree. You can change that to Huffman encoding by setting `MAPBUILDING_ALGO` to `huffman` instead of `shannon-fano` when calling `cmake` to configure the project:
 
 ```
-cmake -DMAPBUILDING_ALGO=shannon-fano -DCMAKE_BUILD_TYPE=Release ..
+cmake -DMAPBUILDING_ALGO=huffman -DCMAKE_BUILD_TYPE=Release ..
 ```
 
 TODO!!!
